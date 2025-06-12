@@ -1,2 +1,2 @@
-git commit --allow-empty -m "Probar GitHub Actions"
+git commit --allow-empty -m "Probar acciones de GitHub"
 git push origin maestro
