@@ -24,7 +24,9 @@ jobs:
       - name: Build y push a DockerHub
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./Client
+          file: ./Client/Dockerfile
           push: true
           tags: antonio1306/mi-app-react:latest
+
 
