@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cliente-app
+    env: docker
+    image: antonio1306/mi-app-react:latest
+    plan: free
+    dockerCommand: "nginx -g 'daemon off;'"
+    autoDeploy: false
+    ports:
+      - 80
