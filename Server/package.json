@@ -1,13 +1,15 @@
 {
   "name": "rest_api_nod_ts_server",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts"
-  },
+  "main": "dist/index.js",
+  "description": "Este es mi proyecto API REST FULL",
   "author": "Antonio",
   "license": "ISC",
-  "description": "Este es mi proyecto API REST FULL",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
